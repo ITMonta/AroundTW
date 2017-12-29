@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.validation.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atw.project.voyage.controller.AddReservationController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #C6C4C4;">
+         <children>
+            <AnchorPane prefHeight="450.0" prefWidth="269.0" style="-fx-background-color: #152F7E;">
+               <children>
+                  <Text fill="#c6c4c4" layoutX="33.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" textAlignment="CENTER" wrappingWidth="186.13671875">
+                     <font>
+                        <Font name="Century Gothic" size="37.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutY="85.0" prefHeight="45.0" prefWidth="269.0" style="-fx-background-color: #152F7E;">
+                     <children>
+                        <Text fill="#c6c4c4" layoutX="76.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" textAlignment="CENTER" wrappingWidth="117.13671875">
+                           <font>
+                              <Font name="Constantia" size="25.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="Booktravel" layoutY="143.0" prefHeight="45.0" prefWidth="269.0" style="-fx-background-color: #C6C4C4;">
+                     <children>
+                        <Text fx:id="booktravel1" fill="#152f7e" layoutX="54.0" layoutY="28.0" onMouseClicked="#gotobooktravet" strokeType="OUTSIDE" strokeWidth="0.0" text="Book a Travel" textAlignment="CENTER" wrappingWidth="161.13671875">
+                           <font>
+                              <Font name="Constantia" size="25.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="203.0" prefHeight="45.0" prefWidth="269.0" style="-fx-background-color: #152F7E;">
+                     <children>
+                        <Text fill="#c6c4c4" layoutX="54.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book a Hotel" textAlignment="CENTER" wrappingWidth="161.13671875">
+                           <font>
+                              <Font name="Constantia" size="25.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="264.0" prefHeight="45.0" prefWidth="269.0" style="-fx-background-color: #152F7E;">
+                     <children>
+                        <Text fill="#c6c4c4" layoutX="62.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rent a Car " textAlignment="CENTER" wrappingWidth="161.13671875">
+                           <font>
+                              <Font name="Constantia" size="25.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="322.0" prefHeight="45.0" prefWidth="269.0" style="-fx-background-color: #152F7E;">
+                     <children>
+                        <Text fill="#c6c4c4" layoutX="36.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Touristic guide" textAlignment="CENTER" wrappingWidth="197.0">
+                           <font>
+                              <Font name="Constantia" size="25.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="379.0" prefHeight="45.0" prefWidth="269.0" style="-fx-background-color: #152F7E;">
+                     <children>
+                        <Text fill="#c6c4c4" layoutX="61.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account" textAlignment="CENTER" wrappingWidth="161.13671875">
+                           <font>
+                              <Font name="Constantia" size="25.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="269.0" prefHeight="450.0" prefWidth="483.0" style="-fx-background-color: #C6C4C4;">
+               <children>
+                  <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="168.0" prefWidth="446.0" style="-fx-background-color: #4362C0;">
+                     <children>
+                        <Text fill="#c6c4c4" layoutX="-16.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click To Display :" textAlignment="CENTER" wrappingWidth="242.0">
+                           <font>
+                              <Font name="Constantia" size="19.0" />
+                           </font>
+                        </Text>
+                        <JFXButton fx:id="display" layoutX="205.0" layoutY="44.0" onAction="#displayy" prefHeight="37.0" prefWidth="197.0" style="-fx-background-color: #C6C4C4;" text="Ok !" textFill="#4362c0">
+                           <font>
+                              <Font name="Constantia" size="20.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <TableView fx:id="tableau1" layoutX="44.0" layoutY="250.0" opacity="0.88" prefHeight="128.0" prefWidth="397.0" style="-fx-background-color: #C6C4C4;" stylesheets="@../tab.css">
+                    <columns>
+                      <TableColumn fx:id="Date" prefWidth="92.0" text="Date" />
+                      <TableColumn fx:id="Destinations" prefWidth="99.0" text="Destination" />
+                        <TableColumn fx:id="KidPrices" minWidth="0.0" prefWidth="86.0" text="Kid Price" />
+                        <TableColumn fx:id="AdultPrices" minWidth="0.0" prefWidth="71.0" text="Adult Price" />
+                        <TableColumn fx:id="id" prefWidth="48.0" text="id" />
+                    </columns>
+                  </TableView>
+                  <JFXButton fx:id="bookt" layoutX="166.0" layoutY="392.0" onAction="#Upcredit" prefHeight="36.0" prefWidth="174.0" style="-fx-background-color: #4362C0;" text="Book" textFill="#c6c4c4">
+                     <font>
+                        <Font name="Constantia" size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXComboBox layoutX="154.0" layoutY="199.0" prefHeight="27.0" prefWidth="117.0" style="-fx-border-color: #4059a9;" />
+                  <DatePicker layoutX="26.0" layoutY="199.0" opacity="0.54" prefHeight="27.0" prefWidth="117.0" />
+                  <AnchorPane fx:id="anchor1" layoutX="15.0" layoutY="20.0" prefHeight="418.0" prefWidth="458.0" style="-fx-background-color: #4362C0; -fx-background-radius: 10px;">
+                     <children>
+                        <Text fill="#c6c4c4" layoutX="2.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Card Number  :" textAlignment="CENTER" wrappingWidth="197.0">
+                           <font>
+                              <Font name="Constantia" size="19.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="Cardnumber" layoutX="192.0" layoutY="117.0" prefHeight="25.0" prefWidth="224.0" unFocusColor="#c6c4c4" />
+                        <JFXTextField fx:id="cvv" layoutX="199.0" layoutY="211.0" prefHeight="25.0" prefWidth="90.0" unFocusColor="#c6c4c4" />
+                        <Text fill="#c6c4c4" layoutX="41.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CVV  :" textAlignment="CENTER" wrappingWidth="197.0">
+                           <font>
+                              <Font name="Constantia" size="19.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#c6c4c4" layoutX="14.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="expiration date :" textAlignment="CENTER" wrappingWidth="197.0">
+                           <font>
+                              <Font name="Constantia" size="19.0" />
+                           </font>
+                        </Text>
+                        <DatePicker fx:id="exDate" layoutX="197.0" layoutY="172.0" opacity="0.29" style="-fx-background-color: #152F7E;" />
+                        <JFXButton fx:id="pay" layoutX="180.0" layoutY="257.0" onAction="#payer" prefHeight="45.0" prefWidth="117.0" style="-fx-background-color: #C6C4C4;" text="Pay">
+                           <font>
+                              <Font name="Constantia" size="22.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextField fx:id="Cin" layoutX="190.0" layoutY="46.0" prefHeight="25.0" prefWidth="224.0" unFocusColor="#c6c4c4" />
+                        <Text fill="#c6c4c4" layoutX="2.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Card Identification Number (CIN)" textAlignment="CENTER" wrappingWidth="186.13671875">
+                           <font>
+                              <Font name="Constantia" size="19.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="64.0" fitWidth="406.0" layoutX="24.0" layoutY="336.0">
+                           <image>
+                              <Image url="@project/voyage/Img/cc.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="anchor2" layoutX="28.0" layoutY="43.0" onMouseDragEntered="#ok" onMouseEntered="#ok" prefHeight="388.0" prefWidth="429.0" style="-fx-background-color: #152F7E;" visible="false">
+                     <children>
+                        <JFXTextField fx:id="ANbr" layoutX="254.0" layoutY="93.0" prefHeight="37.0" prefWidth="104.0" style="-fx-background-color: white;" unFocusColor="WHITE" />
+                        <JFXTextField fx:id="KidNbr" focusColor="WHITE" layoutX="254.0" layoutY="29.0" prefHeight="37.0" prefWidth="104.0" style="-fx-background-color: white;" unFocusColor="#fffbfb" />
+                        <JFXTextField fx:id="CNbr" layoutX="254.0" layoutY="176.0" prefHeight="37.0" prefWidth="104.0" style="-fx-background-color: white;" unFocusColor="WHITE" />
+                        <Button fx:id="pay1" layoutX="140.0" layoutY="278.0" mnemonicParsing="false" onAction="#pay1" prefHeight="45.0" prefWidth="149.0" text="Pay">
+                           <font>
+                              <Font name="Constantia" size="23.0" />
+                           </font>
+                        </Button>
+                        <Text fill="#c6c4c4" layoutX="16.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kid Number :" wrappingWidth="186.13671875">
+                           <font>
+                              <Font name="Constantia" size="30.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#c6c4c4" layoutX="8.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adult Number :" wrappingWidth="218.0">
+                           <font>
+                              <Font name="Constantia" size="30.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#c6c4c4" layoutX="14.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Child Number :" wrappingWidth="205.13671875">
+                           <font>
+                              <Font name="Constantia" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

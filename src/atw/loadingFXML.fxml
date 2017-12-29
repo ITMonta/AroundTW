@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" style="-fx-border-radius: 30px; -fx-background-radius: 30px;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atw.LoadingFXMLController">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="750.0">
+         <image>
+            <Image url="@project/voyage/Img/Loading.gif" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="181.0" fitWidth="296.0" layoutX="227.0" layoutY="302.0">
+               <image>
+                  <Image url="@project/voyage/Img/itsFO56360D1B217Ahs-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="437.0" layoutY="378.0">
+               <image>
+                  <Image url="@project/voyage/Img/copyright_sign_u00A9_icon_256x256.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</StackPane>

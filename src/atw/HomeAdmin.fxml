@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atw.project.voyage.controller.HomeAdminController">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="750.0">
+         <image>
+            <Image url="@project/voyage/Img/BGD.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Hotel" buttonType="RAISED" layoutX="58.0" layoutY="26.0" onAction="#GotoHotel" prefHeight="67.0" prefWidth="208.0" ripplerFill="#ffa411" style="-fx-background-color: #bcb3c5;" text="Hotel">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.33">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Forte" size="32.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Guides" buttonType="RAISED" layoutX="58.0" layoutY="108.0" onAction="#GotoGuides" prefHeight="67.0" prefWidth="208.0" ripplerFill="#ffa411" style="-fx-background-color: #bcb3c5;" text="Guides">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.33">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Forte" size="32.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Cars" buttonType="RAISED" layoutX="58.0" layoutY="192.0" onAction="#GotoCars" prefHeight="67.0" prefWidth="208.0" ripplerFill="#ffa411" style="-fx-background-color: #bcb3c5;" text="Cars">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.33">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Forte" size="34.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="User" buttonType="RAISED" layoutX="58.0" layoutY="274.0" onAction="#GotoUser" prefHeight="67.0" prefWidth="208.0" ripplerFill="#ffa411" style="-fx-background-color: #bcb3c5;" text="Users">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.33">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Forte" size="32.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Voyage" buttonType="RAISED" layoutX="58.0" layoutY="356.0" onAction="#GotoVoyage" prefHeight="67.0" prefWidth="208.0" ripplerFill="#ffa411" style="-fx-background-color: #bcb3c5;" text="Voyage">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <Lighting diffuseConstant="1.33">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Forte" size="34.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="337.0" layoutY="28.0" prefHeight="396.0" prefWidth="350.0" style="-fx-background-color: #bcb3c5; -fx-background-radius: 20px;">
+         <children>
+            <ImageView fitHeight="137.0" fitWidth="137.0" layoutX="114.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@project/voyage/Img/cloud-admin.png" />
+               </image>
+            </ImageView>
+            <JFXTextField layoutX="97.0" layoutY="153.0" prefHeight="25.0" prefWidth="179.0" promptText="Name" />
+            <JFXTextField layoutX="95.0" layoutY="199.0" prefHeight="25.0" prefWidth="179.0" promptText="Last Name" />
+            <JFXTextField layoutX="97.0" layoutY="246.0" prefHeight="25.0" prefWidth="179.0" promptText="Cin" />
+            <JFXTextField layoutX="97.0" layoutY="305.0" prefHeight="25.0" prefWidth="179.0" promptText="E-mail" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="HomeA" layoutX="657.0" layoutY="1.0" onAction="#GoHomeA" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #04B404;" text="Home" textFill="#fffefe">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="LogoutA" layoutX="36.0" layoutY="2.0" onAction="#Logout" style="-fx-background-color: #DF0101;" text="LOGOUT" textFill="#fffefe">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView disable="true" fitHeight="28.0" fitWidth="28.0" layoutX="708.0" onMouseClicked="#GoHomeA">
+         <image>
+            <Image url="@../Img/home-circle-green-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="14.0">
+         <image>
+            <Image url="@../Img/icon-1294532_960_720.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
